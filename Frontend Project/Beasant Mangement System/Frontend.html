@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/81ef6dd811.js" crossorigin="anonymous"></script>
+ <style>
+    /* Navbar */
+    marquee{
+     font-size: larger;
+     background-color:  orange;
+     padding: 10px;
+     padding-bottom: 5px;
+     
+}
+.abovenav{
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    background-color:black;
+    color: white;
+}
+.abovenav a{
+    margin-left: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    color: white;
+}
+.icon a i{
+    padding-left: 10px;
+}
+a:hover{
+    color: red;
+}
+.secondnav{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    background-color: rgb(181, 198, 228);
+}
+.anchor a{
+    list-style: none;
+    color: black;
+    padding: 15px;
+    padding-left: 25px;
+    text-decoration: none;
+    font-size: large;
+   
+}
+.anchor a:hover{
+    background-color: antiquewhite;
+    color: rgb(210, 37, 37);
+}
+#btn1{
+    background-color: rgb(55, 227, 98);
+   margin-top: 15px;
+   border: none;
+   border-radius: 5px; 
+   padding:5px;
+   margin-left: 20px;
+   font-size: large;
+}
+#enquairy{
+    height: 450px;
+    width: 350px;
+    background-color: antiquewhite;
+    text-align: center;
+    position: relative;
+    left: 950px;
+    bottom: 50px;
+    font-size: larger;
+    border-radius: 10px;
+    display: none;
+}
+#dropdown {
+    text-align: center;
+    height: 80px;
+    width: 100px;
+    position: absolute;
+    left: 51.80%;
+    top: 140px;
+    font-size: medium;
+    background-color: antiquewhite;
+    display: none;
+}
+ 
+
+ #dropdown p:hover{
+    color: white;
+    background-color: black;
+   padding: 5px;
+}
+#dropdown,p,a{
+    text-decoration: none;
+}
+
+/* Course content */
+    .heading{
+        text-align: center;
+    }
+    h1{
+        font-size: 40px;
+        color: rgb(250, 180, 4);
+        margin-bottom: 10px;
+    }
+    .bttn{
+        color: white;
+        background-color: rgb(250, 180, 4) ;
+        padding: 8px;
+        border: none;
+        font-size: large;
+    }
+    .btn2{
+       color: white;
+       background-color: rgb(11, 11, 127);
+       padding: 5px;
+       border: none;
+       font-size: medium;
+       border-radius: 5px;
+    }
+    .p1{
+        border: 1px solid white;
+        box-shadow: 4px 4px 8px rgb(188, 180, 180);
+        margin-left: 20px;
+        margin-right: 50px;  
+        margin-bottom: 10px; 
+        padding: 10px;
+    }
+    h3{
+        text-align: center;
+        color:rgb(238, 122, 6) ;
+    }
+    ul li{
+        font-size: large;
+        line-height: 25px;
+        font-weight: lighter;
+        margin-left: 50px;
+    }
+    .box{
+        border: 1px solid rgb(226, 215, 215);
+        height: 20px;
+        padding: 10px;
+        margin-left:40px ;
+        margin-right: 30px;
+        box-shadow: 3px 3px 4px rgb(226, 223, 219);
+        border-radius: 10px;
+    }
+    .Course{
+            background-color: rgb(225, 133, 13);
+            color:black;
+            border: none;
+            width: 100%;
+            text-align: left;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .para{
+            width: 100%;
+            display: none;  
+            height: 120px;
+            overflow-y: scroll;  
+        }
+/* Footer */
+        .footer{
+    display: grid;
+    grid-template-columns: 27.5% 27.5% 25% 20%;
+    background-color: rgb(201, 212, 223);
+    margin-top: 40px;
+}
+.first{
+    margin-left: 30px;
+}
+.first p{
+    font-weight: lighter;
+    word-spacing: 5px;
+    color: rgb(44, 42, 42);
+    font-size: large;
+}
+.head{
+    color: black;
+    font-size:x-large;
+}
+.second{
+    margin-left: 30px;
+    line-height: 35px;
+}
+.second p{
+    font-size: large;
+}
+.third p{
+    line-height: 25px;
+    font-size: large;
+}
+.fourth input{
+      padding: 5px;
+      margin-right: 15px;
+      border-radius: 5px;
+}
+.fourth i{
+    margin-top: 5px;
+    color: black;
+    background-color:rgb(11, 156, 48) ;height: 20px;
+    width: 20px;
+    text-align: center;
+    padding: 10px;
+    font-size: larger;
+    border-radius: 10px;
+    
+}    
+   
+    
+ </style>
+
+
+</head>
+<body>
+    <!--Navbar  -->
+    <div class="marquee">
+        <marquee behavior="alternate" direction="left">Our best offer Ever!!Summer Special-Get 3Courses at 22499/-only.<a href="#">Read More</a></marquee>
+
+    </div>
+    <div class="abovenav">
+         <a href=" mail to:rjtechnology@gmail.com">Email: rjtechnology@gmail.com</a>
+         <a href="tel:+91 8220856313"> Contact: +91 8220856313 </a>
+        <p class="icon">
+            <a href="https://www.facebook.com " target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com " target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+           <a href="https://www.linkedin.com" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+        </p>
+    </div>
+<div class="secondnav">
+        <h3><i class="fa-solid fa-graduation-cap"></i> RJ Technology</h3>
+        <div class="anchor" style="margin-top: 17px;">
+          <a href="./Besant.html" >Home</a><a href="#">About</a><a href="#"> Contact</a><a href="./onlineCourse.html " target="_blank">Online Training</a><a href="#" onmouseover="incousre()" onmouseout="outcourse()">Courses</a>
+          <a href="./Employee data.html" target="_blank">Employee</a>
+      </div>
+      <div>
+        <button id="btn1"onmouseover="over()" onmouseout="out()">Enquairy</button>
+    </div>
+</div>
+<div id="dropdown"  onmouseover="incousre()" onmouseout="outcourse()">
+    <p><span style="text-decoration: none;"></span><a href="./Frontend.html" target="_blank">Front End</a></span></p>
+    <p><span style="text-decoration: none;"><a href="./Backend.html" target="_blank">Back End</a></span></p>
+</div>
+<!-- course content -->
+    <div class="heading">
+      <h1>Frontend Developer</h1>
+      <button class="bttn"><i class="fa-solid fa-user"></i>Eroll</button> &nbsp;&nbsp; <button class="btn2">Javascript</button> &nbsp; <button class="btn2">React</button> &nbsp;<button class="bttn"> <i class="fa-solid fa-calendar-days"></i>View Batches</button>
+    </div>
+    <div class="p1">
+        <h3> Who this course is for?</h3>
+        <ul>
+            <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+            <li>Any Software engineer who intrested in Mobile Technologies</li>
+            <li>Freshers/Undergradutes/Graduates/Software Testers</li>
+        </ul>
+
+    </div>
+    <div class="p1">
+        <h3>Why take this course?</h3>
+        <ul>
+            <li>Working professionals who wants to upgrade their skills from manual testing.</li>
+            <li>One who is willing to move into automation testing projects.</li>
+            <li>One who is working to move into automation and want to learn advance concepts for implementing in their projects.</li>
+        </ul>
+
+    </div>
+    <div class="p1">
+        <h3>What you will learn?</h3>
+                <ul>
+                    <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+                    <li>You will be able to handle real time challenges using Selenium</li>
+                    <li>Complete knowlwdge on Test NG, MAVEN, JENKINS</li>
+                    <li>You will improve ypur coding skills in writing best optimized code for Automating test cases</li>
+                    <li>In-depth understanding of real time Selenium CHALLENGES</li>
+                    <li>By the end of this course, You will be Mastered on Selenium Web driver with strong Core JAVA basics</li>
+                    <li>****** You need NOT have java coding experience to start this course. Even non Programming candidates can follow this course comfortably</li>
+                    <li>All Installation setup including Java knowledge is taken care as part of course</li>
+                    <li>100% JOB ASSISTANCE after completion of course to make your Profile reach to Hundreds of Recruiters i our network. ******</li>
+                </ul>
+
+    </div>
+    <div class="p1" >
+        <h3>Course Content</h3>
+        <button  class="Course">HTML</button>
+               
+        <div class="para">
+           <ul >
+            <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+            <li>You will be able to handle real time challenges using Selenium</li>
+            <li>Complete knowlwdge on Test NG, MAVEN, JENKINS</li>
+            <li>You will improve ypur coding skills in writing best optimized code for Automating test cases</li>
+            <li>In-depth understanding of real time Selenium CHALLENGES</li>
+            <li>By the end of this course, You will be Mastered on Selenium Web driver with strong Core JAVA basics</li>
+            <li>****** You need NOT have java coding experience to start this course. Even non Programming candidates can follow this course comfortably</li>
+            <li>All Installation setup including Java knowledge is taken care as part of course</li>
+            <li>100% JOB ASSISTANCE after completion of course to make your Profile reach to Hundreds of Recruiters i our network. ******</li>
+        </ul>
+
+        </div>
+       
+           <button class="Course">CSS</button>
+           
+        <div class="para">
+           <ul >
+            <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+            <li>You will be able to handle real time challenges using Selenium</li>
+            <li>Complete knowlwdge on Test NG, MAVEN, JENKINS</li>
+            <li>You will improve ypur coding skills in writing best optimized code for Automating test cases</li>
+            <li>In-depth understanding of real time Selenium CHALLENGES</li>
+            <li>By the end of this course, You will be Mastered on Selenium Web driver with strong Core JAVA basics</li>
+            <li>****** You need NOT have java coding experience to start this course. Even non Programming candidates can follow this course comfortably</li>
+            <li>All Installation setup including Java knowledge is taken care as part of course</li>
+            <li>100% JOB ASSISTANCE after completion of course to make your Profile reach to Hundreds of Recruiters i our network. ******</li>
+        </ul>
+
+        </div>
+        <button class="Course">Bootstarp</button>
+           
+        <div class="para">
+           <ul >
+            <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+            <li>You will be able to handle real time challenges using Selenium</li>
+            <li>Complete knowlwdge on Test NG, MAVEN, JENKINS</li>
+            <li>You will improve ypur coding skills in writing best optimized code for Automating test cases</li>
+            <li>In-depth understanding of real time Selenium CHALLENGES</li>
+            <li>By the end of this course, You will be Mastered on Selenium Web driver with strong Core JAVA basics</li>
+            <li>****** You need NOT have java coding experience to start this course. Even non Programming candidates can follow this course comfortably</li>
+            <li>All Installation setup including Java knowledge is taken care as part of course</li>
+            <li>100% JOB ASSISTANCE after completion of course to make your Profile reach to Hundreds of Recruiters i our network. ******</li>
+        </ul>
+
+        </div>
+        <button class="Course">JavaScript</button>
+           
+        <div class="para">
+           <ul >
+            <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+            <li>You will be able to handle real time challenges using Selenium</li>
+            <li>Complete knowlwdge on Test NG, MAVEN, JENKINS</li>
+            <li>You will improve ypur coding skills in writing best optimized code for Automating test cases</li>
+            <li>In-depth understanding of real time Selenium CHALLENGES</li>
+            <li>By the end of this course, You will be Mastered on Selenium Web driver with strong Core JAVA basics</li>
+            <li>****** You need NOT have java coding experience to start this course. Even non Programming candidates can follow this course comfortably</li>
+            <li>All Installation setup including Java knowledge is taken care as part of course</li>
+            <li>100% JOB ASSISTANCE after completion of course to make your Profile reach to Hundreds of Recruiters i our network. ******</li>
+        </ul>
+
+        </div>
+        <button class="Course">ReactJS</button>
+           
+        <div class="para">
+           <ul >
+            <li>Manual testers, Non-programming aware testers interested in learning Automation</li>
+            <li>You will be able to handle real time challenges using Selenium</li>
+            <li>Complete knowlwdge on Test NG, MAVEN, JENKINS</li>
+            <li>You will improve ypur coding skills in writing best optimized code for Automating test cases</li>
+            <li>In-depth understanding of real time Selenium CHALLENGES</li>
+            <li>By the end of this course, You will be Mastered on Selenium Web driver with strong Core JAVA basics</li>
+            <li>****** You need NOT have java coding experience to start this course. Even non Programming candidates can follow this course comfortably</li>
+            <li>All Installation setup including Java knowledge is taken care as part of course</li>
+            <li>100% JOB ASSISTANCE after completion of course to make your Profile reach to Hundreds of Recruiters i our network. ******</li>
+        </ul>
+
+        </div>
+
+    </div>
+    <div class="p1">
+        <h3>Description</h3>
+        <p style="font-size: large; margin-left:30px;">This course is designed for all manual testers who wants to upgrade their skills to automation. Course will be trained by top industry experts who have passion to train students and help then upgrade their skills level.</p>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="first">
+            <h3 class="head"><i class="fa-solid fa-graduation-cap"></i> RJ Technology</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil culpa error praesentium sapiente sed harum architecto quisquam est, laborum ex saepe, quis mollitia voluptatibus dolore obcaecati laboriosam tempore vitae ab?</p>
+        </div>
+        <div class="second">
+            <h3 class="head">Our Services</h3>
+            <p>Mobile Application Design <br>
+               Web Application Design <br>
+               Websites Design <br>
+               Web User Interface Design <br>
+               Web UX Design and Research <br>
+               Theme Development Design
+            </p>
+        </div>
+        <div class="third">
+            <h3 class="head">Head Office</h3>
+            <p>1/2 Marathahalli, Bengaluru,<br>Karnataka-560037. <br> Phone:+91 8220856313 <br>Email:rjtechnology@gmail.com <br>
+           <span style="font-weight: bolder;"> Office Time </span>:10.00AM - 6.00PM</p>
+    
+        </div>
+        <div class="fourth">
+             <h3 class="head">Subscribe Us</h3>
+             <input type="text"><i class="fa-brands fa-telegram"></i><br>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+        </div>
+    
+    </div>
+
+<script>
+    const acc=document.getElementsByClassName("head")
+     var i;
+    for(i=0;i<acc.length;i++){
+        acc[i].addEventListener("click",function(){
+            // this.classList.toggle("active")
+            var x=this.nextElementSibling
+            if(x.style.display === "block"){
+                 x.style.display="none"
+            }
+            else{
+                x.style.display="block"
+            }
+        })
+    } 
+const course=document.getElementById("dropdown")
+function incousre(){
+    course.style.display="block"
+}
+function outcourse(){
+    course.style.display="none"
+}
+
+</script>
+</body>
+
+</html>
